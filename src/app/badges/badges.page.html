@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Badges</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Badges</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <ion-item style="--background: #e3f2fd; --color: #0d47a1;">
+      <ion-label>Followers</ion-label>
+      <ion-badge color="primary">22k</ion-badge>
+    </ion-item>
+    <ion-item style="--background: #ede7f6; --color: #4527a0;">
+      <ion-label>Likes</ion-label>
+      <ion-badge color="secondary">118k</ion-badge>
+    </ion-item>
+    <ion-item style="--background: #e8f5e9; --color: #2e7d32;">
+      <ion-label>Stars</ion-label>
+      <ion-badge color="tertiary">34k</ion-badge>
+    </ion-item>
+    <ion-item style="--background: #fff8e1; --color: #ff6f00;">
+      <ion-label>Completed</ion-label>
+      <ion-badge color="success">80</ion-badge>
+    </ion-item>
+    <ion-item style="--background: #fff3e0; --color: #bf360c;">
+      <ion-label>Warnings</ion-label>
+      <ion-badge color="warning">70</ion-badge>
+    </ion-item>
+    <ion-item style="--background: #ffebee; --color: #b71c1c;">
+      <ion-label>Notifications</ion-label>
+      <ion-badge color="danger">1000</ion-badge>
+    </ion-item>
+  </ion-list>
+
+
+  <div style="margin-top: 20px; text-align: center;">
+    <ion-card-subtitle style="font-size: 1.5rem; font-weight: bold;">
+      Segundo
+    </ion-card-subtitle>
+    <div style="height: 4px; background-color: #007bff; margin: 10px auto; width: 90%;"></div>
+  </div>
+
+  <ion-list mode="ios">
+    <ion-item style="--background: #e3f2fd; --color: #0d47a1;">
+      <ion-badge slot="start" color="tertiary">11</ion-badge>
+      <ion-label>Badge in start slot</ion-label>
+    </ion-item>
+    <ion-item style="--background: #ede7f6; --color: #4527a0;">
+      <ion-badge slot="end" color="primary">22</ion-badge>
+      <ion-label>Badge in end slot</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

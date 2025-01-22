@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <ion-item>
+      <ion-input label="Correo electrónico" labelPlacement="floating" type="email" placeholder="Ingresa tu correo">
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Contraseña" labelPlacement="floating" type="password" placeholder="Ingresa tu contraseña">
+      </ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-button expand="block" color="primary" routerLink="/inicio">Iniciar sesión</ion-button>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

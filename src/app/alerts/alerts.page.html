@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Alerts</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">alerts</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-button id="present-alert-1">Click me</ion-button>
+  <ion-alert
+    trigger="present-alert-1"
+    header="Enter your details"
+    [buttons]="alertButtons1"
+    [inputs]="alertInputs1"
+  ></ion-alert>
+
+  <div style="margin-top: 20px; text-align: center;">
+    <ion-card-subtitle style="font-size: 1.5rem; font-weight: bold;">
+      Segundo
+    </ion-card-subtitle>
+    <div style="height: 4px; background-color: #70aa41; margin: 10px auto; width: 90%;"></div>
+  </div>
+
+  <ion-button id="present-alert-2">Click me</ion-button>
+  <ion-alert
+    trigger="present-alert-2"
+    header="Select your favorite color"
+    [buttons]="alertButtons2"
+    [inputs]="alertInputs2"
+  ></ion-alert>
+
+  <div style="margin-top: 20px; text-align: center;">
+    <ion-card-subtitle style="font-size: 1.5rem; font-weight: bold;">
+      Tercero
+    </ion-card-subtitle>
+    <div style="height: 4px; background-color: #70aa41; margin: 10px auto; width: 90%;"></div>
+  </div>
+
+  <ion-button id="present-alert">Click Me</ion-button>
+<ion-alert
+  trigger="present-alert"
+  class="custom-alert"
+  header="Are you sure?"
+  [buttons]="alertButtons"
+></ion-alert>
+</ion-content>

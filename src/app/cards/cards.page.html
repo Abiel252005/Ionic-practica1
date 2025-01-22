@@ -1,0 +1,129 @@
+<ion-header>
+  <ion-toolbar mode="ios" >
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cards</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar style="--background: #f8f9fa;">
+      <ion-title size="large">Cards</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card
+    style="
+      --background: #ffffff;
+      --color: #333;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    "
+  >
+    <ion-card-header>
+      <ion-card-title style="font-size: 1.5rem; font-weight: bold;">Prueba</ion-card-title>
+      <ion-card-subtitle style="font-size: 1rem; color: #777;">Profe Jaime no me repruebe</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content style="font-size: 1rem; line-height: 1.5; color: #555;">
+      Acá volviendome la fokin máquina del fokin Ionic 😎.
+    </ion-card-content>
+  </ion-card>
+
+  <div style="margin-top: 20px; text-align: center;">
+    <ion-card-subtitle style="font-size: 1.5rem; font-weight: bold;">
+      Segundo
+    </ion-card-subtitle>
+    <div style="height: 4px; background-color: #60758b; margin: 10px auto; width: 90%;"></div>
+  </div>
+
+  <ion-card
+    style="
+      --background: #ffffff;
+      --color: #333;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    "
+  >
+    <img
+      alt="Book cover"
+      src="https://i.pinimg.com/474x/39/07/d6/3907d69a0e401c5355fdd5b35de54f31.jpg"
+    />
+    <ion-card-header>
+      <ion-card-title style="font-size: 1.5rem; font-weight: bold;">Soy ese</ion-card-title>
+      <ion-card-subtitle style="font-size: 1rem; color: #777;">Oyasumi</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content style="font-size: 1rem; line-height: 1.5; color: #555;">
+      Lean ese libro, es un 10 de 10.
+    </ion-card-content>
+  </ion-card>
+
+  <div style="margin-top: 20px; text-align: center;">
+    <ion-card-subtitle style="font-size: 1.5rem; font-weight: bold;">
+      Segundo
+    </ion-card-subtitle>
+    <div style="height: 4px; background-color: #60758b; margin: 10px auto; width: 90%;"></div>
+  </div>
+
+  <ion-card
+    style="
+      --background: #ffffff;
+      --color: #333;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    "
+  >
+    <ion-card-header>
+      <ion-card-title style="font-size: 1.5rem; font-weight: bold; text-align: center;">
+        Good Night
+      </ion-card-title>
+      <ion-card-subtitle style="font-size: 1rem; color: #777; text-align: center;">Punpun</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item
+          style="
+            --background: #f9f9f9;
+            --color: #333;
+            border-radius: 8px;
+            margin-bottom: 8px;
+          "
+        >
+          <ion-thumbnail slot="start" style="border-radius: 50%; overflow: hidden;">
+            <img alt="Silhouette of mountains" src="https://i.pinimg.com/474x/39/07/d6/3907d69a0e401c5355fdd5b35de54f31.jpg" />
+          </ion-thumbnail>
+          <ion-label>Soy</ion-label>
+        </ion-item>
+
+        <ion-item
+          style="
+            --background: #f9f9f9;
+            --color: #333;
+            border-radius: 8px;
+            margin-bottom: 8px;
+          "
+        >
+          <ion-thumbnail slot="start" style="border-radius: 50%; overflow: hidden;">
+            <img alt="Profile" src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/72/2024/03/16/WhatsApp-Image-2024-03-16-at-165031-3195747318.jpeg" />
+          </ion-thumbnail>
+          <ion-label>Yo</ion-label>
+        </ion-item>
+
+        <ion-item
+          style="
+            --background: #f9f9f9;
+            --color: #333;
+            border-radius: 8px;
+            margin-bottom: 8px;
+          "
+        >
+          <ion-thumbnail slot="start" style="border-radius: 50%; overflow: hidden;">
+            <img alt="Another profile" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS66ZN3lsGf5wp30D2uLNwB3t320Gu5yl5Ugm3k-7HeSPkxscsH2QA1HbltbXGomaue7i4&usqp=CAU" />
+          </ion-thumbnail>
+          <ion-label>Soy ese</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
