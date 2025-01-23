@@ -13,17 +13,19 @@
 
   <ion-list>
     <ion-item>
-      <ion-input label="Correo electrónico" labelPlacement="floating" type="email" placeholder="Ingresa tu correo">
+      <ion-input [(ngModel)]="email" label="Correo electrónico" labelPlacement="floating" type="email"
+        placeholder="Ingresa tu correo">
       </ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-input label="Contraseña" labelPlacement="floating" type="password" placeholder="Ingresa tu contraseña">
+      <ion-input [(ngModel)]="password" label="Contraseña" labelPlacement="floating" type="password"
+        placeholder="Ingresa tu contraseña">
       </ion-input>
     </ion-item>
 
     <ion-item lines="none">
-      <ion-button expand="block" color="primary" routerLink="/inicio">Iniciar sesión</ion-button>
+      <ion-button (click)="login()"expand="block" color="primary">Iniciar sesión</ion-button>
     </ion-item>
 
   </ion-list>
